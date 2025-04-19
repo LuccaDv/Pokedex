@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="./favicon/favicon-16x16.png"/>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="./favicon/favicon-16x16.png" />  <!-- Adiciona ícone do navegador (Favicon) -->
+    <link rel="stylesheet" href="/css/style.css" />
 
+    <script defer src="./js/scripts.js"></script>
     <title>Pokédex</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <main>
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="pokemon_gif" class="pokemon_gif">
-<h1 class="pokemon_data">
-<span class="pokemon_number">6 -</span>
-<span class="pokemon_name">Charizard</span>
-</h1>
-    <form class="form">
-        <input 
-        type="search"
-        class="input_search"
-        placeholder="Name or Number"
-        required
+      <img src='#' alt='pokemon_img' class='pokemon_img'> <!--Cria a classe de imagem do pokemon-->
+      <h1 class="pokemon_data">
+        <span class="pokemon_number"></span> - <!--Número do pokemon-->
+        <span class="pokemon_name"></span> <!--Nome do pokemon-->
+      </h1>
+      <form class="form"> <!--Formulário de busca para digitar nome ou número -->
+        <input
+          type="search"
+          class="input_search"
+          placeholder="Name or Number"
+          required
         />
-    </form>
-    <div class="buttons">
-         <button class="btn - prev">Prev &lt; </button> <!-- Uso de entities -->
-        <button class="btn - next">Next &gt; ></button>
-    </div>
-    <img src="/Img/pokedex.png" alt="Pokédex" class="pokedex">
-  
+      </form> <!--Butões para alterar número do pokemon-->
+      <div class="buttons">
+        <button class="button btn-prev">&lt; Prev</button> <!-- Uso de entities para não utilizar o símbolo real (<, >) -->
+        <button class="button btn-next">Next &gt;</button> <!-- Uso de entities para não utilizar o símbolo real (<, >) -->
+      </div>
+      <img src="/Img/pokedex.png" alt="Pokédex" class="pokedex" /> <!--Imagem da pokédex-->
     </main>
-
-</body>
+  </body>
 </html>
